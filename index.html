@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Web - a private, tracker-free terminal for the web</title>
+  <meta name="description" content="Terminal Web is a free desktop browser for Windows that shows the whole web like an 80s terminal: clean text, numbered links, pixel-art pictures, radio, AI chat, games and more.">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1 class="sr-only">Terminal Web</h1>
+<pre class="banner" aria-hidden="true">╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                ║
+║ <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span> <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span>   <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span>   <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span> <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span> <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span>       <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span>    <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span>   ║
+║ <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span> <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span>  <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>       <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">║</span>    <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">║</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">╝</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span>  ║
+║    <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>   <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span>  <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">╝</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span> <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>       <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">║</span> <span class="banner-web">█</span><span class="banner-web banner-shade">╗</span> <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">║</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span>  <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">╝</span>  ║
+║    <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>   <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>  <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term banner-shade">╚</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">╝</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term banner-shade">╚</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╔</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>       <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">║</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">║</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">╝</span>  <span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span>  ║
+║    <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>   <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>  <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span> <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span> <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span> <span class="banner-term banner-shade">╚</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span>  <span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">║</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term">█</span><span class="banner-term banner-shade">╗</span>  <span class="banner-web banner-shade">╚</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">╝</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╗</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web">█</span><span class="banner-web banner-shade">╔</span><span class="banner-web banner-shade">╝</span>  ║
+║    <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>   <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>  <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>     <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>  <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>  <span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span><span class="banner-term banner-shade">╚</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">═</span><span class="banner-term banner-shade">╝</span>   <span class="banner-web banner-shade">╚</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">╝</span><span class="banner-web banner-shade">╚</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">╝</span> <span class="banner-web banner-shade">╚</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">╝</span><span class="banner-web banner-shade">╚</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">═</span><span class="banner-web banner-shade">╝</span>   ║
+║                                                                                                ║
+║                          A PRIVATE, TRACKER-FREE TERMINAL FOR THE WEB                          ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝</pre>
+</header>
+
+<nav>
+  [<a href="#about">About</a>]
+  [<a href="#features">Features</a>]
+  [<a href="#programs">Programs</a>]
+  [<a href="#builder">Make a site</a>]
+  [<a href="#keys">Keys</a>]
+  [<a href="#download">Download</a>]
+  [<a href="#support">Support</a>]
+</nav>
+
+<figure class="hero">
+  <img src="assets/terminalweb-app.jpg" width="1378" height="886"
+       alt="Terminal Web's home screen: the TERMINAL WEB banner, numbered quick-start links, bookmarks on the left and local radio stations on the right">
+  <figcaption>The home screen: numbered links, bookmarks, local weather and radio, all in one colour.</figcaption>
+</figure>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    For the past year I've been building <b class="hl">Terminal Web</b>, a free desktop browser for
+    Windows that shows the whole web the way a terminal from the 80s would: one font, one colour
+    (you pick it), and no clutter.
+  </p>
+  <p>
+    It's free and built by one person. I started it last November, and it's being released this
+    month, right around its first birthday.
+  </p>
+  <div class="badge">[ ONE YEAR OLD &middot; NOVEMBER 2026 ]</div>
+</section>
+
+<section id="features">
+  <h2>What it does</h2>
+  <ul class="features">
+    <li><b>Rebuilds messy websites</b> into clean, readable text with numbered links. Type a number and you're there. You can drive the whole thing from the keyboard.</li>
+    <li><b>Turns photos into pixel art</b>, like an old game console, in your chosen colour.</li>
+    <li><b>Boots like an old PC</b>: a BIOS screen, then a DOS window, then your password. You can add an authenticator app too.</li>
+    <li><b>Three looks</b>: classic dark terminal, a soft light mode and a blue mid mode, and you can change the colours any way you like.</li>
+    <li><b>Signs you in right inside the app</b>: when a site needs a login, its real page opens in Terminal Web, then you're back to clean text.</li>
+    <li><b>Search built in</b>: DuckDuckGo, Yahoo and Wiby, each with its own search box.</li>
+  </ul>
+</section>
+
+<section id="programs">
+  <h2>Programs built in</h2>
+  <div class="grid">
+    <ul class="features">
+      <li><b>Internet radio</b>, with your local stations ready in a side panel.</li>
+      <li><b>AI chat</b> in a side panel that slides over whatever you're reading.</li>
+      <li><b>A games arcade</b> for a little text-mode fun.</li>
+      <li><b>Video</b>, played right in the terminal.</li>
+    </ul>
+    <ul class="features">
+      <li><b>A journal, a calendar, a to-do list</b> and <b>a word processor</b>.</li>
+      <li><b>Chat rooms and a forum</b> to meet other users.</li>
+      <li><b>Local weather</b> beside the clock, and a weather browser for anywhere.</li>
+      <li><b>T-News</b>, a newspaper with flowing columns that updates itself all day with local, national, world and sports news.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="builder">
+  <h2>Make your own site</h2>
+  <div class="box">
+    <p>
+      <b class="hl">Terminal Web Builder</b> makes sites in the same style: text, frames, numbered
+      links and pixel-art pictures. Publish it anywhere, then add it to the
+      <b class="hl">Terminal Directory</b>, our own little search engine for the terminal web.
+    </p>
+    <p>
+      In Terminal Web, type <code>directory</code> to browse every site from A to Z, or
+      <code>td</code> and your words to search them all.
+    </p>
+    <a class="btn" href="https://leiadigitalmediainc.github.io/Terminal_Web_Sites/">[ Read T-News ]</a>
+    <a class="btn" href="https://leiadigitalmediainc.github.io/Terminal_Web_Sites/directory/">[ The Directory ]</a>
+  </div>
+</section>
+
+<section id="privacy">
+  <h2>Private &amp; tracker-free</h2>
+  <p>No trackers, no pop-ups and no autoplay. Your password opens the app, an optional authenticator app adds a second lock, and your email and settings stay on your own computer.</p>
+</section>
+
+<section id="keys">
+  <h2>Keys</h2>
+<pre class="box shot">[Ctrl+G] Go to an address   [Ctrl+B] Back          [Ctrl+H] Home
+[Ctrl+M] Radio              [Ctrl+J] AI chat       [Ctrl+,] Settings
+[Shift+Ctrl+B] Bookmarks    [Shift+Ctrl+V] Add bookmark
+[F1] Every command, with what it does
+
+In the address bar:  <span class="l">? pizza near me</span>  searches DuckDuckGo
+                     <span class="l">td hockey</span>        searches the Terminal Directory</pre>
+</section>
+
+<section id="download">
+  <h2>Download</h2>
+  <p>For Windows 10 and 11. Arriving this month, right around Terminal Web's first birthday.</p>
+  <a class="btn" href="https://github.com/leiadigitalmediainc/The_Terminal_Web_Downloads/releases/latest/download/TerminalWeb-Setup.exe">[ Download Terminal Web ]</a>
+  <a class="btn" href="https://github.com/leiadigitalmediainc/The_Terminal_Web_Downloads/releases/latest/download/TerminalWebBuilder-Setup.exe">[ Download the Builder ]</a>
+  <a class="btn" href="https://github.com/leiadigitalmediainc/The_Terminal_Web_Downloads/releases">[ All versions ]</a>
+  <p class="small">Windows may say it doesn't recognise the app the first time. Click <b class="hl">More info</b>, then <b class="hl">Run anyway</b>.</p>
+  <p class="small">When it's out, I'd love for you to try it and tell me what breaks, what you'd add, and what sites you'd build with it.</p>
+</section>
+
+<section id="support">
+  <h2>Support Terminal Web</h2>
+  <div class="box">
+    <p>
+      Terminal Web is free, and it's built and maintained by one person. If you enjoy it, a small
+      donation helps cover the costs of keeping it running and funds new features. Every bit is
+      appreciated, but it's never required.
+    </p>
+    <a class="btn donate" href="https://ko-fi.com/terminalweb" id="donate-btn">[ Donate &hearts; ]</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Feedback, bug reports and ideas: <a href="mailto:TerminalWeb@protonmail.com">TerminalWeb@protonmail.com</a></p>
+  <p>Thanks so much for showing an interest. I hope Terminal Web becomes part of your daily routine.</p>
+  <p class="signoff">&mdash; Team T-Web</p>
+</section>
+
+<footer>
+  <p class="know-more"><a href="#download"><b>Would you like to know more?</b></a></p>
+  <img src="assets/terminalweb-icon-512.png" alt=""><br>
+  Terminal Web &copy; 2026 &middot; <a href="#support">Donate</a> &middot; <a href="mailto:TerminalWeb@protonmail.com">Contact</a>
+</footer>
+
+</body>
+</html>

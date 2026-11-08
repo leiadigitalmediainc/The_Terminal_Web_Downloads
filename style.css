@@ -1,0 +1,83 @@
+:root {
+  --bg: #000000;
+  --bg2: #111111;
+  --text: #c68039;
+  --link: #5c9cc7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); }
+body {
+  font-family: 'VT323', 'Consolas', 'Courier New', monospace;
+  font-size: 20px;
+  line-height: 1.35;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+pre { font-family: inherit; white-space: pre; overflow-x: auto; }
+header { text-align: center; margin-bottom: 16px; }
+header img { width: 340px; max-width: 90%; }
+.tagline { font-size: 26px; margin-top: 8px; }
+.cursor { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+nav { text-align: center; margin: 14px 0 22px; }
+nav a { margin: 0 6px; white-space: nowrap; }
+section { margin-bottom: 30px; }
+h2 { font-size: 26px; font-weight: normal; margin-bottom: 8px; }
+h2::before { content: "## "; color: var(--link); }
+p { margin-bottom: 10px; }
+.box { border: 2px solid var(--text); background: var(--bg2); padding: 14px 18px; }
+.features { list-style: none; }
+.features li { margin-bottom: 6px; padding-left: 2ch; text-indent: -2ch; }
+.features li::before { content: "> "; color: var(--link); }
+.features b { font-weight: normal; color: var(--link); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 28px; }
+.btn {
+  display: inline-block;
+  border: 2px solid var(--text);
+  background: var(--bg);
+  color: var(--text);
+  padding: 6px 18px;
+  margin: 4px 8px 4px 0;
+  font-family: inherit;
+  font-size: 22px;
+}
+.btn:hover, .btn:focus { background: var(--text); color: var(--bg); text-decoration: none; }
+.btn.donate { border-color: var(--link); color: var(--link); }
+.btn.donate:hover, .btn.donate:focus { background: var(--link); color: var(--bg); }
+.shot { color: var(--text); font-size: 18px; line-height: 1.15; }
+.shot .l { color: var(--link); }
+footer { text-align: center; border-top: 1px solid var(--text); padding-top: 14px; font-size: 17px; }
+footer img { width: 48px; margin-bottom: 6px; }
+@media (max-width: 600px) { body { font-size: 18px; } .shot { font-size: 12px; } }
+
+/* the app's home banner: block letters, TERMINAL in the text colour and WEB in the link colour */
+.banner {
+  font-family: Consolas, 'Cascadia Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
+  font-size: clamp(4px, 1.45vw, 14.5px);
+  line-height: 1.15;
+  color: var(--text);
+  overflow: hidden;
+  text-align: left;
+  display: inline-block;
+}
+.banner-term { color: var(--text); }
+.banner-web { color: var(--link); }
+.banner-shade { opacity: 0.45; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.hero { margin: 8px 0 34px; text-align: center; }
+.hero img { border: 2px solid var(--text); display: block; width: 100%; height: auto; }
+.hero figcaption { font-size: 17px; margin-top: 6px; }
+.hl { font-weight: normal; color: var(--link); }
+.badge { display: inline-block; border: 1px dashed var(--link); color: var(--link); padding: 2px 10px; margin-top: 4px; }
+code { font-family: inherit; color: var(--link); }
+.small { font-size: 17px; margin-top: 10px; }
+.signoff { color: var(--link); }
+.know-more { font-size: 24px; margin-bottom: 14px; }
+.know-more a { text-decoration: underline; }
