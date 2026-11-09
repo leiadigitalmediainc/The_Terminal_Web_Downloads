@@ -3,7 +3,7 @@
 A free desktop browser for Windows that shows the whole web the way a terminal from the 80s
 would: one font, one colour (you pick it), and no clutter.
 
-**Website:** https://leiadigitalmediainc.github.io/The_Terminal_Web_Downloads/
+**Website:** https://terminalweb1984.netlify.app/
 
 ## Download
 
